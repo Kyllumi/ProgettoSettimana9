@@ -40,10 +40,10 @@
     &:active:focus,
     &:active,
     &:focus {
-      background-color: #221F1F;
+      background-color: #2f2c2c;
     }
   }
- 
+
 }
 
 /* STILE CARDS */
@@ -79,4 +79,11 @@
   background-color: #221F1F;
   color: white;
   border: grey solid 1px;
+}
+
+
+
+/* STILE PAGINA PROFILO E IMPOSTAZIONI */
+.proPage, .mySets {
+  background-color: #221F1F;
 }

@@ -1,8 +1,7 @@
 import React from 'react'
 import logo from '../logo.png';
 import { FaSearch, FaBell, FaUser } from "react-icons/fa";
-import { Navbar, Nav } from 'react-bootstrap'
-
+import { Navbar, Nav, Dropdown } from 'react-bootstrap'
 
 export default function MyNavbar() {
     return (
@@ -28,7 +27,16 @@ export default function MyNavbar() {
                     <Navbar.Text className='me-3 text-white'>{<FaSearch />}</Navbar.Text>
                     <Navbar.Text className='me-3 text-white'>KIDS</Navbar.Text>
                     <Navbar.Text className='me-3 text-white'>{<FaBell />}</Navbar.Text>
-                    <Navbar.Text className='me-3 text-white'>{<FaUser />}</Navbar.Text>
+                    <Dropdown>
+                        <Dropdown.Toggle id="dropdown-basic" className='border-0 bg-transparent rounded-0'>
+                            {<FaUser />}
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu className='bg-dark dropdown-menu-end'>
+                            <Dropdown.Item href="#/action-1" className='bg-dark text-light'>Profilo</Dropdown.Item>
+                            <Dropdown.Item href="#/action-2" className='bg-dark text-light'>Impostazioni</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

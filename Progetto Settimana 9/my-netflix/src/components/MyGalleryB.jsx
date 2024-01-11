@@ -24,7 +24,7 @@ export default class MyGalleryB extends Component {
                         movies: data.Search.map((movie) => movie.Poster),
                         isLoading: false
                     })
-                }, 300)
+                }, 400)
 
             } else {
                 console.log('Errore nel caricamento dei dati')
