@@ -1,0 +1,56 @@
+.App {
+  padding: 0 1rem;
+  background-color: #221F1F;
+  color: white;
+}
+
+.App a {
+  text-decoration: none;
+}
+
+footer a {
+  color: grey;
+  font-size: 80%;
+
+  &:hover {
+    color: lightgrey;
+    text-decoration: underline;
+  }
+}
+
+footer .scNet:hover {
+  background: #333232;
+}
+
+footer .copyrightNetflix {
+  font-size: 80%;
+}
+
+container {
+  margin: 0 1rem
+}
+
+.border-light.rounded-0 {
+  background-color: #221F1F;
+
+  &:hover,
+  &:active:focus,
+  &:active,
+  &:focus {
+    background-color: #221F1F;
+  }
+}
+
+.singolaCard {
+  background-size: cover;
+  width: 15rem;
+  height: 10rem;
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+}

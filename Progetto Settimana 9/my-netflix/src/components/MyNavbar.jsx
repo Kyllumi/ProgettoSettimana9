@@ -1,0 +1,36 @@
+import React from 'react'
+import logo from '../logo.png';
+import { FaSearch, FaBell, FaUser } from "react-icons/fa";
+import { Navbar, Nav } from 'react-bootstrap'
+
+
+export default function MyNavbar() {
+    return (
+        <Navbar expand="lg" bg="transparent" data-bs-theme="dark" className='MiaNav'>
+            <Navbar.Brand href="#home">
+                <img
+                    src={logo}
+                    width="100"
+                    height="55"
+                    alt="React Bootstrap logo"
+                />
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="me-auto">
+                    <Nav.Link href="#home">Home</Nav.Link>
+                    <Nav.Link href="#TV" className='active'>TV Shows</Nav.Link>
+                    <Nav.Link href="#Movies">Movies</Nav.Link>
+                    <Nav.Link href="#RecentlyAdded">Recently Added</Nav.Link>
+                    <Nav.Link href="#MyList">My List</Nav.Link>
+                </Nav>
+                <Nav>
+                    <Navbar.Text className='me-3 text-white'>{<FaSearch />}</Navbar.Text>
+                    <Navbar.Text className='me-3 text-white'>KIDS</Navbar.Text>
+                    <Navbar.Text className='me-3 text-white'>{<FaBell />}</Navbar.Text>
+                    <Navbar.Text className='me-3 text-white'>{<FaUser />}</Navbar.Text>
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
+    )
+}
