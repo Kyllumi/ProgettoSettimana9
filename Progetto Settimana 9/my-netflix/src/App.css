@@ -2,48 +2,54 @@
   padding: 0 1rem;
   background-color: #221F1F;
   color: white;
-}
 
-.App a {
-  text-decoration: none;
-}
-
-footer a {
-  color: grey;
-  font-size: 80%;
-
-  &:hover {
-    color: lightgrey;
-    text-decoration: underline;
+  a {
+    text-decoration: none;
   }
-}
 
-footer .scNet:hover {
-  background: #333232;
-}
+  /* STILE FOOTER */
+  footer {
+    a {
+      color: grey;
+      font-size: 90%;
 
-footer .copyrightNetflix {
-  font-size: 80%;
-}
+      &:hover {
+        color: lightgrey;
+        text-decoration: underline;
+      }
+    }
 
-container {
-  margin: 0 1rem
-}
+    p {
+      margin: 0;
+    }
 
-.border-light.rounded-0 {
-  background-color: #221F1F;
+    .scNet:hover {
+      background: #333232;
+    }
 
-  &:hover,
-  &:active:focus,
-  &:active,
-  &:focus {
+    .copyrightNetflix {
+      font-size: 80%;
+    }
+  }
+
+  /* STILE BOTTONE GENRES */
+  .border-light.rounded-0 {
     background-color: #221F1F;
+
+    &:hover,
+    &:active:focus,
+    &:active,
+    &:focus {
+      background-color: #221F1F;
+    }
   }
+ 
 }
 
+/* STILE CARDS */
 .singolaCard {
   background-size: cover;
-  width: 15rem;
+  width: 13rem;
   height: 10rem;
   transition: transform 0.5s ease;
 
@@ -53,4 +59,24 @@ container {
     cursor: pointer;
   }
 
+}
+
+/* STILE SPINNER */
+.spinner-border.text-secondary {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 3rem auto 0 auto;
+}
+
+/* STILE ALERT */
+.fade.alert.alert-warning.show {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 1.2rem;
+  background-color: #221F1F;
+  color: white;
+  border: grey solid 1px;
 }
