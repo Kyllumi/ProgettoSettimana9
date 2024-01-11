@@ -1,11 +1,13 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MyNavbar from './components/MyNavbar';
-import MyFooter from './components/MyFooter';
+import MyHeader from './components/MyHeader';
 import MyGalleryA from './components/MyGalleryA';
 import MyGalleryB from './components/MyGalleryB';
-import MyHeader from './components/MyHeader';
 import MyGalleryC from './components/MyGalleryC';
+import MyGalleryD from './components/MyGalleryD';
+import MyFooter from './components/MyFooter';
+
 
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
       <MyGalleryA />
       <MyGalleryB />
       <MyGalleryC />
+      <MyGalleryD />
       <MyFooter />
     </div>
   );
