@@ -47,17 +47,38 @@
 }
 
 /* STILE CARDS */
+.cardC {
+  height: 20rem;
+  background-color: 'transparent';
+
+}
+
 .singolaCard {
   background-size: cover;
-  height: 22rem;
   transition: transform 0.5s ease;
+  overflow-y: hidden;
+  height: 19rem;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.04);
     transition: 0.5s;
     cursor: pointer;
+    z-index: 1;
   }
+}
 
+.card-container {
+  height: 20rem;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+      height: 40rem;
+  }
+  .singolaCard {
+      height: 39rem;
+  }
 }
 
 /* STILE SPINNER */
@@ -83,6 +104,7 @@
 
 
 /* STILE PAGINA PROFILO E IMPOSTAZIONI */
-.proPage, .mySets {
+.proPage,
+.mySets {
   background-color: #221F1F;
 }
