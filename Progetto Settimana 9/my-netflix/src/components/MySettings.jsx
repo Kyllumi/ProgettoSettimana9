@@ -4,7 +4,7 @@ import paypal from '../paypal.png';
 
 export default function MySettings() {
     return (
-        <div className='w-75 mx-auto mySets fluid'>
+        <div className='w-75 mx-auto mySets fluid mb-5'>
             <h1 className="fw-normal border-bottom border-opacity-50 border-secondary my-3 p-3">Account</h1>
             <div>
                 <Row>

@@ -4,7 +4,7 @@ import { Container, Button, Row, Col, Dropdown, Form, ButtonGroup } from 'react-
 
 export default function MyAccount() {
     return (
-        <div className="text-white proPage">
+        <div className="text-white proPage mb-5">
             <Container id="editProfile">
                 <h1 className="fw-normal border-bottom border-opacity-50 border-secondary my-3">Edit Profile</h1>
                 <Row className="justify-content-start border-bottom border-opacity-50 border-secondary">
@@ -24,9 +24,9 @@ export default function MyAccount() {
                                 </Dropdown.Toggle>
 
                                 <Dropdown.Menu variant="dark">
-                                    <Dropdown.Item href="#">Italian</Dropdown.Item>
-                                    <Dropdown.Item href="#">French</Dropdown.Item>
-                                    <Dropdown.Item href="#">Japanese</Dropdown.Item>
+                                    <Dropdown.Item href="#a">Italian</Dropdown.Item>
+                                    <Dropdown.Item href="#b">French</Dropdown.Item>
+                                    <Dropdown.Item href="#c">Japanese</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                         </div>
@@ -43,11 +43,11 @@ export default function MyAccount() {
                         <div className="pb-3 mt-3">
                             <p>Autoplay controls</p>
                             <Form.Check className="d-flex align-items-center">
-                                <Form.Check.Input type="checkbox" className="bg-dark p-3 border me-2" checked />
+                                <Form.Check.Input type="checkbox" className="bg-dark p-3 border me-2" />
                                 <Form.Check.Label>Autoplay next episode in a series on all devices.</Form.Check.Label>
                             </Form.Check>
                             <Form.Check className="d-flex align-items-center">
-                                <Form.Check.Input type="checkbox" className="bg-dark p-3 border me-2" checked />
+                                <Form.Check.Input type="checkbox" className="bg-dark p-3 border me-2" />
                                 <Form.Check.Label>Autoplay previous while browsing on all devices.</Form.Check.Label>
                             </Form.Check>
                         </div>
