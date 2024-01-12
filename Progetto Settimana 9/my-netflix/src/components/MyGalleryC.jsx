@@ -45,7 +45,7 @@ export default class MyGalleryC extends Component {
     render() {
         return (
             <>
-                <h4 className="ms-2 mt-3">Saga di Star Wars</h4>
+                <h4 className="ms-2 mt-3">Saga di Sci-Fi</h4>
 
                 {this.state.isLoading && <Spinner animation="border" variant="secondary" />}
 
